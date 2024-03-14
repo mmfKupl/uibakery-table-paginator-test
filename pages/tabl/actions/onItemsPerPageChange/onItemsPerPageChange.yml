@@ -1,0 +1,35 @@
+id: '17099153287770.3760961043912554'
+kind: workflow
+name: onItemsPerPageChange
+nameConfigured: true
+steps:
+  - id: '17099153311090.5305312472220707'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: true
+parentPageId: '17098340463210.38217084901120923'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.onItemsPerPageChange.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.onItemsPerPageChange.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.onItemsPerPageChange.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false

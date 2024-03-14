@@ -1,0 +1,33 @@
+id: '1'
+name: Home
+url: home
+slots:
+  - id: '1'
+    name: content
+    bindings: {}
+    children:
+      - id: '1'
+        definitionId: grid
+        parentSlotId: '1'
+        index: 0
+        styles: {}
+        properties:
+          name: grid
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        actions: {}
+        slots:
+          - id: '2'
+            name: content
+            bindings: {}
+            children:
+              - components/table.yml
+              - components/table2.yml
+              - components/table3.yml
+              - components/table4.yml
+              - components/table5.yml
+              - components/table6.yml
+              - components/table7.yml
+              - components/table8.yml

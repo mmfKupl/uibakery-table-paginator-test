@@ -1,0 +1,30 @@
+id: '17097510477890.18287645115698314'
+name: ta
+url: ta
+roleIds: []
+disableInMenu: false
+parentPageId: ''
+slots:
+  - id: '17097510477890.7683028607837719'
+    name: content
+    children:
+      - id: '17097510477890.03308166325718376'
+        definitionId: grid
+        parentSlotId: '17097510477890.7683028607837719'
+        styles: {}
+        properties:
+          name: ta
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '17097510477900.803168199122752'
+            name: content
+            children:
+              - components/table9.yml
+              - components/rating.yml
+              - components/table10.yml
+              - components/table11.yml
+              - components/table12.yml

@@ -1,0 +1,33 @@
+id: '17099148852410.41497871781401785'
+kind: workflow
+name: onPageChange
+nameConfigured: true
+steps:
+  - id: '17099148887350.8942041654796522'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: false
+mode: manual
+modeConfigured: true
+parentPageId: '17098340463210.38217084901120923'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.onPageChange.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.onPageChange.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.onPageChange.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
